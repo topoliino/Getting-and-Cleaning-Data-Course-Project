@@ -10,3 +10,16 @@ The file run_analysis.R script is intended to do the following:
 1. Appropriately labels the data set with descriptive variable names. 
 1. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+##A more precise description of what the run_analysis.R script does:
+###0. Loads the libraries plyr, dplyr and data.table.
+###0. Downloads the data and unzip's it.
+###1. Merges the training and the test sets to create one data set.
+- The columns of subject_test.txt, y_test.txt and X_test.txt are attached
+- The columns of subject_train.txt, y_train.txt and X_train.txt are attached
+- the train set is attached as extra rows in the test set
+##2. Extract only the measurements on the mean and standard deviation for each measurement.
+- columns that do not have mean or std are deleted
+
+
+
+
