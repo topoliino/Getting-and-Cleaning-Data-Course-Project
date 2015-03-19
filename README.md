@@ -23,6 +23,15 @@ The file run_analysis.R script is intended to do the following:
 
 - columns that do not have mean or std are deleted
 
+####3. Uses descriptive activity names to name the activities in the data set
 
+- The activities are labeled
 
+####4. Naming columns
 
+- Acronyms are replaced with longer names
+
+####5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
+
+- Create final data as a data set with average for each activity and subject.
+- Saves the dataset to "Tidy.txt"
