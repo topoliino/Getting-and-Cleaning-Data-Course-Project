@@ -1,99 +1,103 @@
-#Code book
+<h1>Code book</h1>
 
-This code book describes the data collected with wearable computing. The data focuses on different activities in training and test situations.
+<p>This code book describes the data collected with wearable computing. The data focuses on different activities in training and test situations.</p>
 
-The source  data can be downloaded here [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip ](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip ). The full description of the original data can be found here: [http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones ](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones ).
+<p>The source data can be downloaded here <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip </a>. The full description of the original data can be found here: <a href="http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones">http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones </a>.</p>
 
-The data comprises of 68 variables and 180 observations. Each observation (row) represents a mean for measurements for each subject and each activity.
+<p>The data comprises of 68 variables and 180 observations. Each observation (row) represents a mean for measurements for each subject and each activity.</p>
 
-###What was done to construct the dataset
+<h3>What was done to construct the dataset</h3>
 
-1. The variables were first downloaded from the [website](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). 
-2. The subject Id's, activities and accelerometer data were combined, and train and test-datasets were also attached.
-3. Only the means and standard deviations for each measurement were extracted.
-4. Acitivy names were labeled.
-4. The dataset was labeled according to the data description. 
-5. The final data set with the average of each variable for each activity and each subject was created
+<ol>
+<li>The variables were first downloaded from the <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">website</a>.</li>
+<li>The subject Id&#8217;s, activities and accelerometer data were combined, and train and test-datasets were also attached.</li>
+<li>Only the means and standard deviations for each measurement were extracted.</li>
+<li>Acitivy names were labeled.</li>
+<li>The dataset was labeled according to the data description.</li>
+<li>The final data set with the average of each variable for each activity and each subject was created</li>
+</ol>
 
-###The variables are as follows:
+<h3>The variables are as follows:</h3>
 
-1. Train_or_test - describes whether the activity was done in train or test situation. Values ("train", "test")
-2. Subject - describes the subject  who performed the activity. Range (1-30)
-3. Activity - describes the activity. Values ("WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING")
+<ol>
+<li>Train_or_test - describes whether the activity was done in train or test situation. Values (&#8220;train&#8221;, &#8220;test&#8221;)</li>
+<li>Subject - describes the subject who performed the activity. Range (1&#8211;30)</li>
+<li>Activity - describes the activity. Values (&#8220;WALKING&#8221;, &#8220;WALKING_UPSTAIRS&#8221;, &#8220;WALKING_DOWNSTAIRS&#8221;, &#8220;SITTING&#8221;, &#8220;STANDING&#8221;, &#8220;LAYING&#8221;)</li>
+</ol>
 
-Features - variables of mean and standard deviations for Range, normalized within [-1, 1]. The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. They represent a feature vector for each pattern:
+<p>Features - variables of mean and standard deviations for Range, normalized within [&#8211;1, 1]. The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. They represent a feature vector for each pattern:</p>
 
+<ul>
+<li>TimeBodyAccelerometerMean()-X</li>
+<li>TimeBodyAccelerometerMean()-Y</li>
+<li>TimeBodyAccelerometerMean()-Z</li>
+<li>TimeBodyAccelerometerSTD()-X</li>
+<li>TimeBodyAccelerometerSTD()-Y</li>
+<li>TimeBodyAccelerometerSTD()-Z</li>
+<li>TimeGravityAccelerometerMean()-X</li>
+<li>TimeGravityAccelerometerMean()-Y</li>
+<li>TimeGravityAccelerometerMean()-Z</li>
+<li>TimeGravityAccelerometerSTD()-X</li>
+<li>TimeGravityAccelerometerSTD()-Y</li>
+<li>TimeGravityAccelerometerSTD()-Z</li>
+<li>TimeBodyAccelerometerJerkMean()-X</li>
+<li>TimeBodyAccelerometerJerkMean()-Y</li>
+<li>TimeBodyAccelerometerJerkMean()-Z</li>
+<li>TimeBodyAccelerometerJerkSTD()-X</li>
+<li>TimeBodyAccelerometerJerkSTD()-Y</li>
+<li>TimeBodyAccelerometerJerkSTD()-Z</li>
+<li>TimeBodyGyroscopeMean()-X</li>
+<li>TimeBodyGyroscopeMean()-Y</li>
+<li>TimeBodyGyroscopeMean()-Z</li>
+<li>TimeBodyGyroscopeSTD()-X</li>
+<li>TimeBodyGyroscopeSTD()-Y</li>
+<li>TimeBodyGyroscopeSTD()-Z</li>
+<li>TimeBodyGyroscopeJerkMean()-X</li>
+<li>TimeBodyGyroscopeJerkMean()-Y</li>
+<li>TimeBodyGyroscopeJerkMean()-Z</li>
+<li>TimeBodyGyroscopeJerkSTD()-X</li>
+<li>TimeBodyGyroscopeJerkSTD()-Y</li>
+<li>TimeBodyGyroscopeJerkSTD()-Z</li>
+<li>TimeBodyAccelerometerMagnitudeMean()</li>
+<li>TimeBodyAccelerometerMagnitudeSTD()</li>
+<li>TimeGravityAccelerometerMagnitudeMean()</li>
+<li>TimeGravityAccelerometerMagnitudeSTD()</li>
+<li>TimeBodyAccelerometerJerkMagnitudeMean()</li>
+<li>TimeBodyAccelerometerJerkMagnitudeSTD()</li>
+<li>TimeBodyGyroscopeMagnitudeMean()</li>
+<li>TimeBodyGyroscopeMagnitudeSTD()</li>
+<li>TimeBodyGyroscopeJerkMagnitudeMean()</li>
+<li>TimeBodyGyroscopeJerkMagnitudeSTD()</li>
+<li>FrequencyBodyAccelerometerMean()-X</li>
+<li>FrequencyBodyAccelerometerMean()-Y</li>
+<li>FrequencyBodyAccelerometerMean()-Z</li>
+<li>FrequencyBodyAccelerometerSTD()-X</li>
+<li>FrequencyBodyAccelerometerSTD()-Y</li>
+<li>FrequencyBodyAccelerometerSTD()-Z</li>
+<li>FrequencyBodyAccelerometerJerkMean()-X</li>
+<li>FrequencyBodyAccelerometerJerkMean()-Y</li>
+<li>FrequencyBodyAccelerometerJerkMean()-Z</li>
+<li>FrequencyBodyAccelerometerJerkSTD()-X</li>
+<li>FrequencyBodyAccelerometerJerkSTD()-Y</li>
+<li>FrequencyBodyAccelerometerJerkSTD()-Z</li>
+<li>FrequencyBodyGyroscopeMean()-X</li>
+<li>FrequencyBodyGyroscopeMean()-Y</li>
+<li>FrequencyBodyGyroscopeMean()-Z</li>
+<li>FrequencyBodyGyroscopeSTD()-X</li>
+<li>FrequencyBodyGyroscopeSTD()-Y</li>
+<li>FrequencyBodyGyroscopeSTD()-Z</li>
+</ul>
 
-   - TimeBodyAccelerometerMean()-X
-   - TimeBodyAccelerometerMean()-Y
-   - TimeBodyAccelerometerMean()-Z
-   - TimeBodyAccelerometerSTD()-X
-   - TimeBodyAccelerometerSTD()-Y
-   - TimeBodyAccelerometerSTD()-Z
-   - TimeGravityAccelerometerMean()-X
-   - TimeGravityAccelerometerMean()-Y
-   - TimeGravityAccelerometerMean()-Z
-   - TimeGravityAccelerometerSTD()-X
-   - TimeGravityAccelerometerSTD()-Y
-   - TimeGravityAccelerometerSTD()-Z
-   - TimeBodyAccelerometerJerkMean()-X
-   - TimeBodyAccelerometerJerkMean()-Y
-   - TimeBodyAccelerometerJerkMean()-Z
-   - TimeBodyAccelerometerJerkSTD()-X
-   - TimeBodyAccelerometerJerkSTD()-Y
-   - TimeBodyAccelerometerJerkSTD()-Z
-   - TimeBodyGyroscopeMean()-X
-   - TimeBodyGyroscopeMean()-Y
-   - TimeBodyGyroscopeMean()-Z
-   - TimeBodyGyroscopeSTD()-X
-   - TimeBodyGyroscopeSTD()-Y
-   - TimeBodyGyroscopeSTD()-Z
-   - TimeBodyGyroscopeJerkMean()-X
-   - TimeBodyGyroscopeJerkMean()-Y
-   - TimeBodyGyroscopeJerkMean()-Z
-   - TimeBodyGyroscopeJerkSTD()-X
-   - TimeBodyGyroscopeJerkSTD()-Y
-   - TimeBodyGyroscopeJerkSTD()-Z
-   - TimeBodyAccelerometerMagnitudeMean()
-   - TimeBodyAccelerometerMagnitudeSTD()
-   - TimeGravityAccelerometerMagnitudeMean()
-   - TimeGravityAccelerometerMagnitudeSTD()
-   - TimeBodyAccelerometerJerkMagnitudeMean()
-   - TimeBodyAccelerometerJerkMagnitudeSTD()
-   - TimeBodyGyroscopeMagnitudeMean()
-   - TimeBodyGyroscopeMagnitudeSTD()
-   - TimeBodyGyroscopeJerkMagnitudeMean()
-   - TimeBodyGyroscopeJerkMagnitudeSTD()
-   - FrequencyBodyAccelerometerMean()-X
-   - FrequencyBodyAccelerometerMean()-Y
-   - FrequencyBodyAccelerometerMean()-Z
-   - FrequencyBodyAccelerometerSTD()-X
-   - FrequencyBodyAccelerometerSTD()-Y
-   - FrequencyBodyAccelerometerSTD()-Z
-   - FrequencyBodyAccelerometerJerkMean()-X
-   - FrequencyBodyAccelerometerJerkMean()-Y
-   - FrequencyBodyAccelerometerJerkMean()-Z
-   - FrequencyBodyAccelerometerJerkSTD()-X
-   - FrequencyBodyAccelerometerJerkSTD()-Y
-   - FrequencyBodyAccelerometerJerkSTD()-Z
-   - FrequencyBodyGyroscopeMean()-X
-   - FrequencyBodyGyroscopeMean()-Y
-   - FrequencyBodyGyroscopeMean()-Z
-   - FrequencyBodyGyroscopeSTD()-X
-   - FrequencyBodyGyroscopeSTD()-Y
-   - FrequencyBodyGyroscopeSTD()-Z
+<p></p></p>
 
-</p>
+<p>Additional vectors obtained by averaging the signals. </p>
 
-Additional vectors obtained by averaging the signals. 
+<p></p> </p>
 
-</p> 
- 
-   - FrequencyBodyAccelerometerMagnitudeMean()
-   - FrequencyBodyAccelerometerMagnitudeSTD()
-   - FrequencyBodyAccelerometerJerkMagnitudeMean()
-   - FrequencyBodyAccelerometerJerkMagnitudeSTD()
-   - FrequencyBodyGyroscopeMagnitudeMean()
-
-
- 
+<ul>
+<li>FrequencyBodyAccelerometerMagnitudeMean()</li>
+<li>FrequencyBodyAccelerometerMagnitudeSTD()</li>
+<li>FrequencyBodyAccelerometerJerkMagnitudeMean()</li>
+<li>FrequencyBodyAccelerometerJerkMagnitudeSTD()</li>
+<li>FrequencyBodyGyroscopeMagnitudeMean()</li>
+</ul>
