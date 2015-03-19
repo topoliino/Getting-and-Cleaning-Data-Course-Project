@@ -1,4 +1,4 @@
-# Coursera - Getting and cleaning data - Coursera
+# Coursera - Getting and cleaning data - Course project
 
 This script deals with the wearable computing data. The data is available  [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip ). A full description of the data can be read [http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
